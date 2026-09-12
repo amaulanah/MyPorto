@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Calibri', 'Candara', 'Segoe UI', 'Arial', sans-serif;
+  }
+
+  body {
+    @apply bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100;
+  }
+
+  /* Refined, quiet scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-stone-300 dark:bg-stone-700 rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-stone-400 dark:bg-stone-600;
+  }
+
+  /* Editorial highlight */
+  ::selection {
+    @apply bg-stone-200 text-stone-950 dark:bg-stone-800 dark:text-white;
+  }
+}
+
+@layer utilities {
+  /* Subtle hairline dividers used in classical editorial design */
+  .rule-hairline {
+    @apply border-b border-stone-200 dark:border-stone-800;
+  }
+}

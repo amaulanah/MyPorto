@@ -1,0 +1,25 @@
+{
+  "name": "portofolioproject",
+  "version": "1.0.0",
+  "description": "Clean, human-crafted personal portfolio website built with Tailwind CSS v3 and Vanilla JS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "tailwindcss-v3",
+    "vanilla-js"
+  ],
+  "author": "[FULL_NAME]",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[FULL_NAME] — [YOUR_ROLE]</title>
-  <meta name="description" content="Personal portfolio and engineering notebook of [FULL_NAME], [YOUR_ROLE] based in [LOCATION]." />
+  <title>Asdhi Maulana Hidayatullah — Desktop &amp; Fullstack Developer</title>
+  <meta name="description" content="Portfolio and curriculum vitae of Asdhi Maulana Hidayatullah, .NET Desktop & Fullstack Web Developer based in Riau Islands, Indonesia." />
 
-  <!-- Compiled Tailwind CSS (uses Calibri / Arial system typography) -->
+  <!-- Compiled Tailwind CSS (Calibri / Arial system typography) -->
   <link rel="stylesheet" href="./dist/css/style.css" />
 
   <!-- Anti-FOUC Theme Script -->
@@ -28,26 +28,30 @@
 <body class="bg-stone-50 text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100 selection:bg-stone-200 dark:selection:bg-stone-800 transition-colors duration-200">
 
   <!-- ========================================================================= -->
-  <!-- 1. Header & Navigation (Clean Editorial Style)                            -->
+  <!-- 1. Header & Navigation                                                    -->
   <!-- ========================================================================= -->
   <header id="navbar" class="sticky top-0 z-50 transition-all duration-200 border-b border-transparent">
     <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
       
-      <!-- Monogram / Name -->
+      <!-- Name / Brand -->
       <a href="#" class="group flex items-baseline gap-2.5 focus:outline-none focus-visible:ring-1 focus-visible:ring-stone-900 dark:focus-visible:ring-stone-100 rounded px-1 py-0.5">
-        <span class="font-bold tracking-tight text-base sm:text-lg text-stone-950 dark:text-stone-50 group-hover:opacity-75 transition-opacity">[FULL_NAME]</span>
-        <span class="text-xs text-stone-400 dark:text-stone-500 font-normal hidden sm:inline">&mdash; [YOUR_ROLE]</span>
+        <span class="font-bold tracking-tight text-base sm:text-lg text-stone-950 dark:text-stone-50 group-hover:opacity-75 transition-opacity">
+          Asdhi Maulana Hidayatullah
+        </span>
+        <span class="text-xs text-stone-400 dark:text-stone-500 font-normal hidden md:inline">&mdash; .NET &amp; Fullstack Developer</span>
       </a>
 
       <!-- Navigation Links -->
-      <nav class="hidden md:flex items-center gap-7 text-sm tracking-tight text-stone-600 dark:text-stone-400" aria-label="Main Navigation">
+      <nav class="hidden md:flex items-center gap-6 text-sm tracking-tight text-stone-600 dark:text-stone-400" aria-label="Main Navigation">
         <a href="#about" class="nav-link hover:text-stone-950 dark:hover:text-stone-100 transition-colors">About</a>
-        <a href="#projects" class="nav-link hover:text-stone-950 dark:hover:text-stone-100 transition-colors">Projects</a>
         <a href="#experience" class="nav-link hover:text-stone-950 dark:hover:text-stone-100 transition-colors">Experience</a>
+        <a href="#projects" class="nav-link hover:text-stone-950 dark:hover:text-stone-100 transition-colors">Projects</a>
+        <a href="#education" class="nav-link hover:text-stone-950 dark:hover:text-stone-100 transition-colors">Education</a>
+        <a href="#certifications" class="nav-link hover:text-stone-950 dark:hover:text-stone-100 transition-colors">Certificates</a>
         <a href="#contact" class="nav-link hover:text-stone-950 dark:hover:text-stone-100 transition-colors">Contact</a>
       </nav>
 
-      <!-- Utility: Theme Switcher & Mobile Menu Trigger -->
+      <!-- Utility: Theme Switcher & Mobile Drawer Button -->
       <div class="flex items-center gap-2">
         <button id="theme-toggle" type="button" aria-label="Toggle light or dark theme" class="p-1.5 rounded text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 hover:bg-stone-200/60 dark:hover:bg-stone-800/60 transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-stone-400">
           <!-- Sun icon -->
@@ -68,12 +72,14 @@
       </div>
     </div>
 
-    <!-- Mobile Drawer -->
+    <!-- Mobile Navigation Drawer -->
     <div id="mobile-menu" class="hidden md:hidden px-6 pt-3 pb-5 border-b border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950 transition-all">
       <nav class="flex flex-col gap-3 text-sm font-medium text-stone-700 dark:text-stone-300">
         <a href="#about" class="nav-link py-1 hover:text-stone-950 dark:hover:text-stone-50">About</a>
-        <a href="#projects" class="nav-link py-1 hover:text-stone-950 dark:hover:text-stone-50">Projects</a>
         <a href="#experience" class="nav-link py-1 hover:text-stone-950 dark:hover:text-stone-50">Experience</a>
+        <a href="#projects" class="nav-link py-1 hover:text-stone-950 dark:hover:text-stone-50">Projects</a>
+        <a href="#education" class="nav-link py-1 hover:text-stone-950 dark:hover:text-stone-50">Education</a>
+        <a href="#certifications" class="nav-link py-1 hover:text-stone-950 dark:hover:text-stone-50">Certificates</a>
         <a href="#contact" class="nav-link py-1 hover:text-stone-950 dark:hover:text-stone-50">Contact</a>
       </nav>
     </div>
@@ -82,60 +88,57 @@
   <main class="max-w-4xl mx-auto px-6">
 
     <!-- ========================================================================= -->
-    <!-- 2. Hero Section (Editorial Prose Layout, No AI Gimmicks)                  -->
+    <!-- 2. Hero Section (Text-first with Profile Picture as the Only Image)        -->
     <!-- ========================================================================= -->
     <section id="hero" class="pt-16 pb-16 sm:pt-24 sm:pb-20 border-b border-stone-200 dark:border-stone-800">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
         
-        <!-- Left Column: Biography & Statement -->
-        <div class="md:col-span-8 space-y-6">
+        <!-- Left Column: Biography & Background Narrative -->
+        <div class="md:col-span-8 space-y-5">
           
-          <div class="space-y-3">
+          <div class="space-y-2">
             <p class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">
-              [LOCATION] &bull; [YOUR_ROLE]
+              Riau Islands, Indonesia &bull; Batam
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-stone-950 dark:text-stone-50 leading-[1.15]">
-              [FULL_NAME]
+              Asdhi Maulana Hidayatullah
             </h1>
+            <p class="text-base sm:text-lg font-semibold text-stone-800 dark:text-stone-200">
+              Desktop Based Programmer (.NET Environment) &amp; Full Stack Developer
+            </p>
           </div>
 
-          <p class="text-lg sm:text-xl text-stone-700 dark:text-stone-300 leading-relaxed max-w-2xl">
-            [PRIMARY_BIO: I design and engineer resilient user interfaces for the web. My work centers on accessibility, performance, and building systems that remain maintainable years after they ship.]
+          <p class="text-base text-stone-700 dark:text-stone-300 leading-relaxed max-w-2xl">
+            Currently working at <strong class="text-stone-950 dark:text-stone-100 font-semibold">PT Momentum Otomasi Indonesia</strong> as a .NET Programmer and IT Support, building desktop software for industrial automation systems in manufacturing companies with over 2 years of experience.
           </p>
 
           <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl">
-            [SECONDARY_NOTE: Currently focusing on [CURRENT_FOCUS_OR_COMPANY], building tools that clarify complex workflows for [TARGET_AUDIENCE_OR_USERS]. [AVAILABILITY_NOTE: Open for select consulting and architecture reviews in 2026.]]
+            Experienced across desktop development (.NET C# / VB), web systems (Go, SvelteJS, Next.js, NestJS), Schneider HMI programming (EcoStruxure Operator Terminal Expert), and network support (MikroTik). Graduated from Politeknik Negeri Batam (GPA 3.58) and Universitas Brawijaya (GPA 3.84, Best Intern Participant award).
           </p>
 
-          <!-- Understated Action Links -->
-          <div class="pt-2 flex flex-wrap items-center gap-6 text-sm font-semibold">
-            <a href="#contact" class="inline-flex items-center gap-1.5 text-stone-950 dark:text-stone-100 underline underline-offset-4 decoration-stone-400 dark:decoration-stone-600 hover:decoration-stone-950 dark:hover:decoration-stone-100 transition-colors">
-              <span>Write to me</span>
-              <span>&rarr;</span>
+          <!-- Understated Action Links (LinkedIn, GitHub, Google Drive, Contact) -->
+          <div class="pt-3 flex flex-wrap items-center gap-6 text-sm font-semibold">
+            <a href="https://www.linkedin.com/in/asdhi-maulana-hidayatullah-662289174" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-stone-950 dark:text-stone-100 underline underline-offset-4 decoration-stone-400 dark:decoration-stone-600 hover:decoration-stone-950 dark:hover:decoration-stone-100 transition-colors">
+              <span>LinkedIn Profile</span>
+              <span>&nearr;</span>
             </a>
-            <a href="#projects" class="text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors">
-              Selected projects &darr;
+            <a href="https://github.com/amaulanah" target="_blank" rel="noopener noreferrer" class="text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors">
+              GitHub &nearr;
             </a>
-            <a href="[RESUME_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors">
-              Résumé / CV &nearr;
+            <a href="[GOOGLE_DRIVE_FOLDER_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors">
+              Documents on Google Drive &nearr;
+            </a>
+            <a href="#contact" class="text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors">
+              Contact &darr;
             </a>
           </div>
 
         </div>
 
-        <!-- Right Column: Clean Architectural Portrait Frame -->
+        <!-- Right Column: Profile Picture (The Only Image on the Website) -->
         <div class="md:col-span-4 flex md:justify-end">
-          <div class="w-48 h-48 sm:w-56 sm:h-56 rounded border border-stone-300 dark:border-stone-700 p-1.5 bg-white dark:bg-stone-900 shadow-sm">
-            <div class="w-full h-full rounded-sm bg-stone-100 dark:bg-stone-800 overflow-hidden flex items-center justify-center relative">
-              <!-- Natural Monochrome SVG Avatar Illustration -->
-              <svg class="w-full h-full text-stone-300 dark:text-stone-600" viewBox="0 0 200 200" fill="currentColor">
-                <rect width="200" height="200" fill="none" />
-                <circle cx="100" cy="78" r="34" />
-                <path d="M42 165 C 42 118, 158 118, 158 165 Z" />
-              </svg>
-              <!-- Optional Photo overlay -->
-              <!-- <img src="./dist/img/[PROFILE_IMAGE_FILE]" alt="[FULL_NAME]" class="absolute inset-0 w-full h-full object-cover grayscale contrast-105" /> -->
-            </div>
+          <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-full border-2 border-stone-300 dark:border-stone-700 p-1.5 bg-white dark:bg-stone-900 shadow-sm">
+            <img src="./dist/img/profile.jpg" alt="Asdhi Maulana Hidayatullah" class="w-full h-full object-cover rounded-full" />
           </div>
         </div>
 
@@ -143,222 +146,504 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 3. Projects Section (Architectural Casebook, No Gimmick Cards)            -->
-    <!-- ========================================================================= -->
-    <section id="projects" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
-      
-      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-12 gap-2">
-        <div>
-          <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Selected Work</h2>
-          <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Projects with tangible impact</p>
-        </div>
-        <p class="text-xs text-stone-500 dark:text-stone-400 font-mono">[2022 &mdash; 2026]</p>
-      </div>
-
-      <!-- Projects Stack (Clear, Structured List Format) -->
-      <div class="divide-y divide-stone-200 dark:border-stone-800">
-
-        <!-- Project Entry 1 -->
-        <article class="py-10 first:pt-0 last:pb-0 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-          
-          <div class="md:col-span-4 space-y-2">
-            <span class="text-xs text-stone-400 dark:text-stone-500 font-mono">[YEAR_1, e.g., 2024] &bull; [PROJECT_1_CATEGORY, e.g., Web Application]</span>
-            <h3 class="text-xl font-bold text-stone-950 dark:text-stone-50 tracking-tight">
-              [PROJECT_1_TITLE, e.g., Telemetry Inspector]
-            </h3>
-            <div class="pt-2 flex items-center gap-4 text-xs font-semibold">
-              <a href="[PROJECT_1_DEMO_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-900 dark:text-stone-100 hover:underline">
-                Launch site &nearr;
-              </a>
-              <a href="[PROJECT_1_REPO_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100">
-                Source code &nearr;
-              </a>
-            </div>
-          </div>
-
-          <div class="md:col-span-8 space-y-3">
-            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
-              <strong class="font-semibold text-stone-900 dark:text-stone-100">Context:</strong> [PROJECT_1_PROBLEM, e.g., A diagnostic tool used by distributed engineering teams to monitor real-time network latency. The original implementation struggled with frames dropping under heavy WebSocket streaming.]
-            </p>
-            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
-              <strong class="font-semibold text-stone-900 dark:text-stone-100">Solution:</strong> [PROJECT_1_SOLUTION, e.g., Designed a canvas-backed rendering pipeline offloaded to dedicated Web Workers. Reduced main-thread blocking by 80% and lowered memory consumption from 450MB to 110MB on continuous operation.]
-            </p>
-            <p class="text-xs text-stone-500 dark:text-stone-400 pt-1">
-              <span class="font-semibold text-stone-600 dark:text-stone-400">Stack:</span> [TECH_STACK_SUMMARY_1, e.g., TypeScript, Canvas API, Web Workers, Tailwind CSS, Vite]
-            </p>
-          </div>
-
-        </article>
-
-        <!-- Project Entry 2 -->
-        <article class="py-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-          
-          <div class="md:col-span-4 space-y-2">
-            <span class="text-xs text-stone-400 dark:text-stone-500 font-mono">[YEAR_2, e.g., 2023] &bull; [PROJECT_2_CATEGORY, e.g., Design System]</span>
-            <h3 class="text-xl font-bold text-stone-950 dark:text-stone-50 tracking-tight">
-              [PROJECT_2_TITLE, e.g., Foundations UI Core]
-            </h3>
-            <div class="pt-2 flex items-center gap-4 text-xs font-semibold">
-              <a href="[PROJECT_2_DEMO_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-900 dark:text-stone-100 hover:underline">
-                Documentation &nearr;
-              </a>
-              <a href="[PROJECT_2_REPO_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100">
-                Repository &nearr;
-              </a>
-            </div>
-          </div>
-
-          <div class="md:col-span-8 space-y-3">
-            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
-              <strong class="font-semibold text-stone-900 dark:text-stone-100">Context:</strong> [PROJECT_2_PROBLEM, e.g., Three internal web products were drifting visually, leading to duplicate maintenance work, conflicting CSS classes, and fragmented keyboard navigation.]
-            </p>
-            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
-              <strong class="font-semibold text-stone-900 dark:text-stone-100">Solution:</strong> [PROJECT_2_SOLUTION, e.g., Built an accessible, tokenized component library with automated WCAG AA linting, strict semantic HTML, and zero unnecessary runtime dependencies.]
-            </p>
-            <p class="text-xs text-stone-500 dark:text-stone-400 pt-1">
-              <span class="font-semibold text-stone-600 dark:text-stone-400">Stack:</span> [TECH_STACK_SUMMARY_2, e.g., Vanilla JavaScript, Custom Elements, Tailwind CSS, Playwright]
-            </p>
-          </div>
-
-        </article>
-
-        <!-- Project Entry 3 -->
-        <article class="py-10 last:pb-0 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-          
-          <div class="md:col-span-4 space-y-2">
-            <span class="text-xs text-stone-400 dark:text-stone-500 font-mono">[YEAR_3, e.g., 2023] &bull; [PROJECT_3_CATEGORY, e.g., Developer Tool]</span>
-            <h3 class="text-xl font-bold text-stone-950 dark:text-stone-50 tracking-tight">
-              [PROJECT_3_TITLE, e.g., BundleLens CLI]
-            </h3>
-            <div class="pt-2 flex items-center gap-4 text-xs font-semibold">
-              <a href="[PROJECT_3_DEMO_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-900 dark:text-stone-100 hover:underline">
-                Package Registry &nearr;
-              </a>
-              <a href="[PROJECT_3_REPO_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100">
-                GitHub &nearr;
-              </a>
-            </div>
-          </div>
-
-          <div class="md:col-span-8 space-y-3">
-            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
-              <strong class="font-semibold text-stone-900 dark:text-stone-100">Context:</strong> [PROJECT_3_PROBLEM, e.g., CI/CD builds lacked a quick, visual breakdown of dependency bloat before pull requests were merged into production.]
-            </p>
-            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
-              <strong class="font-semibold text-stone-900 dark:text-stone-100">Solution:</strong> [PROJECT_3_SOLUTION, e.g., Created a standalone Node.js analysis utility that generates an interactive single-file HTML report highlighting duplicate dependencies and tree-shaking failures.]
-            </p>
-            <p class="text-xs text-stone-500 dark:text-stone-400 pt-1">
-              <span class="font-semibold text-stone-600 dark:text-stone-400">Stack:</span> [TECH_STACK_SUMMARY_3, e.g., Node.js, ES Modules, SVG Generators, GitHub Actions]
-            </p>
-          </div>
-
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 4. About & Philosophy (Editorial Writing)                                 -->
-    <!-- ========================================================================= -->
-    <section id="about" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
-      
-      <div class="mb-8">
-        <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">About &amp; Principles</h2>
-        <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">How I approach software</p>
-      </div>
-
-      <div class="space-y-6 text-stone-700 dark:text-stone-300 text-base leading-relaxed max-w-2xl">
-        <p>
-          [PHILOSOPHY_PARAGRAPH_1: I believe great digital tools are quiet, reliable, and respectful of the user's attention. I do not adopt trendy abstractions without justification. When a plain semantic HTML element and a small stylesheet can do the job reliably across devices, that is what I reach for.]
-        </p>
-        <p>
-          [PHILOSOPHY_PARAGRAPH_2: My engineering process emphasizes clean mental models, minimal bundle weight, and resilient error recovery. The best software feels effortless on the surface precisely because the underlying architecture handles the edge cases thoroughly.]
-        </p>
-      </div>
-
-      <!-- Structured Skillset Index (Table format, not generic pill badges) -->
-      <div class="mt-12 pt-8 border-t border-stone-200 dark:border-stone-800 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
-        
-        <div class="space-y-2">
-          <h3 class="font-bold text-stone-950 dark:text-stone-50 text-xs uppercase tracking-wider">Front-End &amp; UI</h3>
-          <ul class="text-stone-600 dark:text-stone-400 space-y-1 text-xs">
-            <li>[SKILL_1, e.g., TypeScript &amp; Modern JS]</li>
-            <li>[SKILL_2, e.g., Semantic HTML5 &amp; WCAG AA]</li>
-            <li>[SKILL_3, e.g., Tailwind CSS &amp; Modern CSS]</li>
-            <li>[SKILL_4, e.g., React, Next.js, or Svelte]</li>
-            <li>[SKILL_5, e.g., Design Token Architectures]</li>
-          </ul>
-        </div>
-
-        <div class="space-y-2">
-          <h3 class="font-bold text-stone-950 dark:text-stone-50 text-xs uppercase tracking-wider">Systems &amp; Tooling</h3>
-          <ul class="text-stone-600 dark:text-stone-400 space-y-1 text-xs">
-            <li>[TOOL_1, e.g., Git &amp; Trunk-based Workflows]</li>
-            <li>[TOOL_2, e.g., Vite, Rollup &amp; Bundlers]</li>
-            <li>[TOOL_3, e.g., Node.js CLI Utilities]</li>
-            <li>[TOOL_4, e.g., Playwright &amp; Unit Testing]</li>
-            <li>[TOOL_5, e.g., Performance &amp; Core Web Vitals]</li>
-          </ul>
-        </div>
-
-        <div class="space-y-2">
-          <h3 class="font-bold text-stone-950 dark:text-stone-50 text-xs uppercase tracking-wider">Design &amp; Collaboration</h3>
-          <ul class="text-stone-600 dark:text-stone-400 space-y-1 text-xs">
-            <li>[DISCIPLINE_1, e.g., Figma to Code Fidelity]</li>
-            <li>[DISCIPLINE_2, e.g., Information Architecture]</li>
-            <li>[DISCIPLINE_3, e.g., Technical Writing &amp; RFCs]</li>
-            <li>[DISCIPLINE_4, e.g., Cross-team Code Review]</li>
-          </ul>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 5. Experience / Chronology (Minimalist Ledger)                            -->
+    <!-- 3. Work Experience Section                                                -->
     <!-- ========================================================================= -->
     <section id="experience" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
       
       <div class="mb-10 flex items-baseline justify-between">
         <div>
-          <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Experience</h2>
-          <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Career timeline</p>
+          <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Career History</h2>
+          <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Work Experience</p>
         </div>
-        <a href="[RESUME_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline">
-          Full CV &nearr;
+        <a href="https://www.linkedin.com/in/asdhi-maulana-hidayatullah-662289174" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline">
+          View LinkedIn Experience &nearr;
+        </a>
+      </div>
+
+      <div class="space-y-10">
+        
+        <!-- Role 1: PT Momentum Otomasi Indonesia -->
+        <div class="pb-10 border-b border-stone-200/60 dark:border-stone-800/60">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+            <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
+              .NET (DotNet) Programmer &amp; IT Support &mdash; <span class="font-normal text-stone-600 dark:text-stone-400">PT Momentum Otomasi Indonesia</span>
+            </h3>
+            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">Oct 2023 &mdash; Present</span>
+          </div>
+          <p class="text-xs text-stone-500 dark:text-stone-400 mb-3">Batam, Riau Islands, Indonesia</p>
+          
+          <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-3">
+            Developing desktop applications using .NET Framework (C# / Visual Basic) for industrial automation machines, automated product testers, product flashers, and robot controllers in manufacturing facilities. Building web-based power monitoring systems using Go and SvelteJS, and programming Schneider HMI terminals.
+          </p>
+
+          <ul class="text-sm text-stone-700 dark:text-stone-300 space-y-1.5 list-disc list-outside pl-4 leading-relaxed max-w-2xl">
+            <li><strong>Desktop Automation &amp; Testing Machines:</strong> Developed software for HVPO Tester Machine (CASCO SEA), BED Tester Machine (CASCO SEA), End-of-Line Packaging System (CASCO SEA), AURORA Tester (Schneider Batam PEM Site), Auto Screwing Machine (Schneider Batam PEM Site), and PCB FCT Test &amp; PCB Gluing (Flextronics) using VB.Net / C#.Net and Microsoft SQL Server.</li>
+            <li><strong>IoT Power Monitoring System:</strong> Engineered web-based telemetry and power monitoring system in Caterpillar Indonesia Batam using Go Language, SvelteJS, PostgreSQL, and Raspberry Pi.</li>
+            <li><strong>HMI Programming:</strong> Programmed Schneider HMI for Endurance Tester in Schneider Batam Lab Site using EcoStruxure Operator Terminal Expert.</li>
+            <li><strong>Internal IT Support:</strong> Administered internal office network infrastructure, routing, and bandwidth management utilizing MikroTik RouterOS.</li>
+          </ul>
+        </div>
+
+        <!-- Role 2: PT Code Development Indonesia -->
+        <div class="pb-10 border-b border-stone-200/60 dark:border-stone-800/60">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+            <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
+              Full Stack Web Developer (Bootcamp) &mdash; <span class="font-normal text-stone-600 dark:text-stone-400">PT Code Development Indonesia (CODE.ID)</span>
+            </h3>
+            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">Feb 2023 &mdash; Aug 2023</span>
+          </div>
+          <p class="text-xs text-stone-500 dark:text-stone-400 mb-3">Jakarta / Remote, Indonesia</p>
+          
+          <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-3">
+            Engineered full-stack web applications for enterprise management, including the <em>Realta Hotel Web Application</em> (hotel operation management and guest reservation booking platform).
+          </p>
+
+          <ul class="text-sm text-stone-700 dark:text-stone-300 space-y-1.5 list-disc list-outside pl-4 leading-relaxed max-w-2xl">
+            <li>Constructed backend REST API services using NestJS and PostgreSQL database architecture.</li>
+            <li>Implemented user interface and state management using Next.js (React) and tested API endpoints via Postman.</li>
+            <li>Graduated with an assessment score of 82.36 across Soft Skills, Technical Skills, and Final Technical Presentation.</li>
+          </ul>
+
+          <div class="pt-2 text-xs font-semibold">
+            <a href="[GOOGLE_DRIVE_CODE_ID_CERTIFICATE_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-900 dark:text-stone-100 hover:underline">
+              View CODE.ID Certificate on Google Drive &nearr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Role 3: Universitas Brawijaya -->
+        <div class="pb-10 border-b border-stone-200/60 dark:border-stone-800/60">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+            <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
+              Fullstack Web Developer (Intern) &mdash; <span class="font-normal text-stone-600 dark:text-stone-400">Universitas Brawijaya</span>
+            </h3>
+            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">Aug 2021 &mdash; Nov 2021</span>
+          </div>
+          <p class="text-xs text-stone-500 dark:text-stone-400 mb-3">Malang, East Java, Indonesia</p>
+          
+          <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-3">
+            Served as Team Leader of 3 engineers at Pusat Matakuliah Pengembangan Kepribadian (PMPK) developing <em>MPK Apps</em>, an internal web application actively deployed for university academic administration.
+          </p>
+
+          <ul class="text-sm text-stone-700 dark:text-stone-300 space-y-1.5 list-disc list-outside pl-4 leading-relaxed max-w-2xl">
+            <li>Engineered backend and frontend modules with PHP, MySQL database, and Postman API testing.</li>
+            <li>Managed agile sprints, documentation, and reporting via Trello.</li>
+            <li>Awarded <strong>Best Intern Participant (Peserta Magang Terbaik Divisi IT)</strong> of the 2021 apprenticeship batch.</li>
+          </ul>
+
+          <div class="pt-2 text-xs font-semibold">
+            <a href="[GOOGLE_DRIVE_BEST_INTERN_CERTIFICATE_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-900 dark:text-stone-100 hover:underline">
+              View Best Intern Award Certificate on Google Drive &nearr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Role 4: PT. PCI Elektronik Internasional -->
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+            <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
+              IT Staff (Intern) &mdash; <span class="font-normal text-stone-600 dark:text-stone-400">PT. PCI Elektronik Internasional</span>
+            </h3>
+            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">Jan 2018 &mdash; Jul 2018</span>
+          </div>
+          <p class="text-xs text-stone-500 dark:text-stone-400 mb-3">Batam, Riau Islands, Indonesia</p>
+          <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+            Maintained company computer systems and industrial network infrastructure, ensuring reliable wireless and LAN connectivity to Surface-Mount Device (SMD) manufacturing machines and staff computer workstations.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. Projects & Technical Solutions (Text-Only Format)                     -->
+    <!-- ========================================================================= -->
+    <section id="projects" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
+      
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-12 gap-2">
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Technical Highlights</h2>
+          <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Selected Systems &amp; Projects</p>
+        </div>
+        <a href="https://github.com/amaulanah" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline">
+          GitHub Profile &nearr;
+        </a>
+      </div>
+
+      <div class="divide-y divide-stone-200 dark:divide-stone-800">
+
+        <!-- Project 1: Industrial Automation Systems -->
+        <article class="py-8 first:pt-0 last:pb-0 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-4 space-y-1">
+            <span class="text-xs text-stone-400 dark:text-stone-500 font-mono">Industrial Automation &bull; 2023–Present</span>
+            <h3 class="text-lg font-bold text-stone-950 dark:text-stone-50 tracking-tight">
+              Manufacturing Tester &amp; Robot Automation Suite
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 pt-1">
+              Clients: CASCO SEA, Schneider Batam PEM, Flextronics
+            </p>
+          </div>
+          <div class="md:col-span-8 space-y-2">
+            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+              Engineered production desktop programs on .NET Framework (C# / VB.NET, SQL Server) for high-precision manufacturing automation, including HVPO Tester, BED Tester, End-of-Line Packaging, Auto Screwing Machines, and PCB FCT testing &amp; gluing systems.
+            </p>
+            <p class="text-xs text-stone-500 dark:text-stone-400">
+              <span class="font-semibold text-stone-700 dark:text-stone-300">Technologies:</span> C#, VB.NET, .NET Framework, SQL Server, Serial Communication, Industrial Automation
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2: Power Monitoring System -->
+        <article class="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-4 space-y-1">
+            <span class="text-xs text-stone-400 dark:text-stone-500 font-mono">IoT &bull; Web Telemetry</span>
+            <h3 class="text-lg font-bold text-stone-950 dark:text-stone-50 tracking-tight">
+              Power Monitoring System in Caterpillar Indonesia Batam
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 pt-1">
+              PT Momentum Otomasi Indonesia
+            </p>
+          </div>
+          <div class="md:col-span-8 space-y-2">
+            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+              Designed and deployed a real-time web-based electrical telemetry and power monitoring system. Back-end built in Go Language for low-overhead telemetry ingestion, paired with a responsive SvelteJS frontend, PostgreSQL time-series storage, and Raspberry Pi edge devices.
+            </p>
+            <p class="text-xs text-stone-500 dark:text-stone-400">
+              <span class="font-semibold text-stone-700 dark:text-stone-300">Technologies:</span> Go (Golang), SvelteJS, PostgreSQL, Raspberry Pi, Linux, Edge Computing
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3: Realta Hotel Web Application -->
+        <article class="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-4 space-y-1">
+            <span class="text-xs text-stone-400 dark:text-stone-500 font-mono">Full Stack Web &bull; 2023</span>
+            <h3 class="text-lg font-bold text-stone-950 dark:text-stone-50 tracking-tight">
+              Realta Hotel Management &amp; Booking Application
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 pt-1">
+              Code ID Web Project
+            </p>
+          </div>
+          <div class="md:col-span-8 space-y-2">
+            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+              Constructed full-stack enterprise web application for hotel management, room allocation, and customer reservation booking. Designed backend architecture with NestJS and PostgreSQL database models, integrated with a Next.js front-end.
+            </p>
+            <p class="text-xs text-stone-500 dark:text-stone-400">
+              <span class="font-semibold text-stone-700 dark:text-stone-300">Technologies:</span> Next.js, React, NestJS, TypeScript, PostgreSQL, Postman
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 4: MPK Apps -->
+        <article class="py-8 last:pb-0 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <div class="md:col-span-4 space-y-1">
+            <span class="text-xs text-stone-400 dark:text-stone-500 font-mono">Academic Web System &bull; 2021</span>
+            <h3 class="text-lg font-bold text-stone-950 dark:text-stone-50 tracking-tight">
+              MPK Apps &mdash; Universitas Brawijaya
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 pt-1">
+              Pusat MPK Universitas Brawijaya
+            </p>
+          </div>
+          <div class="md:col-span-8 space-y-2">
+            <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+              Led engineering team of 3 members in the development of MPK Apps for university academic workflow management. Designed MySQL relational databases, implemented backend endpoints with PHP, and managed project delivery.
+            </p>
+            <p class="text-xs text-stone-500 dark:text-stone-400">
+              <span class="font-semibold text-stone-700 dark:text-stone-300">Technologies:</span> PHP, MySQL, REST API, Trello, SDLC
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. Education Section                                                      -->
+    <!-- ========================================================================= -->
+    <section id="education" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
+      
+      <div class="mb-10 flex items-baseline justify-between">
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Academic Credentials</h2>
+          <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Education</p>
+        </div>
+        <a href="[GOOGLE_DRIVE_DIPLOMAS_FOLDER_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline">
+          View Diplomas on Google Drive &nearr;
         </a>
       </div>
 
       <div class="space-y-8">
         
-        <!-- Role 1 -->
-        <div class="pb-8 border-b border-stone-200/60 dark:border-stone-800/60 last:border-b-0 last:pb-0">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+        <!-- Degree 1: Politeknik Negeri Batam -->
+        <div class="pb-8 border-b border-stone-200/60 dark:border-stone-800/60">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
             <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
-              [ROLE_1_TITLE, e.g., Senior Front-End Engineer] &mdash; <span class="font-normal text-stone-600 dark:text-stone-400">[COMPANY_1_NAME]</span>
+              Politeknik Negeri Batam
             </h3>
-            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">[START_YEAR_1] &mdash; [Present / END_YEAR_1]</span>
+            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">2022 &mdash; 2025</span>
           </div>
-          <p class="text-xs text-stone-500 dark:text-stone-400 mb-3">[LOCATION_1, e.g., San Francisco, CA &bull; Remote]</p>
-          <ul class="text-sm text-stone-700 dark:text-stone-300 space-y-1.5 list-disc list-outside pl-4 leading-relaxed max-w-2xl">
-            <li>[ROLE_1_HIGHLIGHT_A: e.g., Led the front-end overhaul of customer-facing dashboards, reducing page load latency by 45% across global regions.]</li>
-            <li>[ROLE_1_HIGHLIGHT_B: e.g., Defined engineering standards for accessible component architectures across 4 cross-functional product squads.]</li>
+          <p class="text-sm font-semibold text-stone-800 dark:text-stone-200 mb-1">
+            Sarjana Terapan (Applied Bachelor) of Multimedia Engineering Technology (S.Tr.Kom.)
+          </p>
+          <div class="text-xs font-mono text-stone-500 dark:text-stone-400 mb-2">
+            GPA: <strong class="text-stone-900 dark:text-stone-100 font-bold">3.58 / 4.00</strong> &bull; Predikat: Dengan Pujian (Cumlaude)
+          </div>
+          <p class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-3">
+            <strong>Final Project:</strong> <em>Perancangan Aplikasi untuk Mesin Otomasi Pengujian High Voltage Power Outlet (HVPO) Menggunakan Metode Rapid Application Development (RAD) dengan Analisis Pieces</em>.
+          </p>
+          <div class="text-xs font-semibold">
+            <a href="[GOOGLE_DRIVE_POLIBATAM_DIPLOMA_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-900 dark:text-stone-100 hover:underline">
+              View Polibatam Degree &amp; Transcript in Google Drive &nearr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Degree 2: Universitas Brawijaya -->
+        <div class="pb-8 border-b border-stone-200/60 dark:border-stone-800/60">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
+            <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
+              Universitas Brawijaya
+            </h3>
+            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">2019 &mdash; 2022</span>
+          </div>
+          <p class="text-sm font-semibold text-stone-800 dark:text-stone-200 mb-1">
+            Diploma III of Information Technology (Ahli Madya Teknologi Informasi - A.Md.Kom.)
+          </p>
+          <div class="text-xs font-mono text-stone-500 dark:text-stone-400 mb-2">
+            GPA: <strong class="text-stone-900 dark:text-stone-100 font-bold">3.84 / 4.00</strong> &bull; Fakultas Vokasi
+          </div>
+          <p class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-3">
+            Focus on Object-Oriented Programming, Database Implementation, Mobile Application Engineering, Software Testing, and Web Information Systems.
+          </p>
+          <div class="text-xs font-semibold">
+            <a href="[GOOGLE_DRIVE_BRAWIJAYA_DIPLOMA_URL]" target="_blank" rel="noopener noreferrer" class="text-stone-900 dark:text-stone-100 hover:underline">
+              View Universitas Brawijaya Degree &amp; Transcript in Google Drive &nearr;
+            </a>
+          </div>
+        </div>
+
+        <!-- High School: SMK Negeri 1 Batam -->
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
+            <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
+              SMK Negeri 1 Batam
+            </h3>
+            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">2016 &mdash; 2019</span>
+          </div>
+          <p class="text-sm text-stone-700 dark:text-stone-300">
+            Computer and Networking Engineering (Teknik Komputer dan Jaringan)
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. Certifications, Assessments & Professional Licenses                    -->
+    <!-- ========================================================================= -->
+    <section id="certifications" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
+      
+      <div class="mb-10 flex items-baseline justify-between">
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Licenses &amp; Credentials</h2>
+          <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Certificates &amp; Qualifications</p>
+        </div>
+        <a href="[GOOGLE_DRIVE_CERTIFICATES_FOLDER_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-50 underline">
+          All Certificates in Google Drive &nearr;
+        </a>
+      </div>
+
+      <!-- Structured List of Real Document Credentials -->
+      <div class="space-y-6 text-sm">
+        
+        <!-- Credential 1 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              Auditor TI (IT Auditor) &mdash; Hasil Asesmen: KOMPETEN
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              Lembaga Sertifikasi Profesi (LSP) INFORMATIKA &bull; BNSP No. 10455/SKHA/LSP-INF/07/2026 (July 2026)
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_IT_AUDITOR_CERT_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 2 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              Bimtek dan Sertifikasi IT Auditor (Predikat: B+ Sangat Baik)
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              LPK Roganda Maduma Jaya &amp; Dinas Tenaga Kerja Kota Batam &bull; No. 2326/LPKRMJ/VII/2026 (July 2026)
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_DISNAKER_AUDITOR_CERT_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 3 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              Junior Web Developer (Sertifikat Kompetensi)
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              Badan Nasional Sertifikasi Profesi (BNSP) &bull; LSP Teknologi Digital &bull; No. Reg. TIK 1565 17967 2022
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_BNSP_JUNIOR_WEB_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 4 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              Fullstack Node.js Program Completion (Final Score: 82.36)
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              CODE.ID Academy (May 2023)
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_CODE_ID_CERT_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 5 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              Javascript Engineer with Javascript &amp; Node.js (Total Score: 100)
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              Course-Net Indonesia &bull; Sertifikat Kompetensi &amp; Penyelesaian (October 2022)
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_COURSENET_CERT_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 6 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              Kotlin Programming &amp; Software Development Foundations
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              Dicoding Indonesia &bull; Certificates: QLZ928Q42X5D &amp; 6RPN66VE5P2M (2022)
+            </p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/QLZ928Q42X5D" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            Verify Online &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 7 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              TOEFL ITP Score Report: 517
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              ETS / Universitas Brawijaya &bull; Listening: 55, Structure: 46, Reading: 54 (CEFR Level B1/B2)
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_TOEFL_CERT_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 8 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              Microsoft Office Desktop Application Competency
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              TRUST Training Partners / Microsoft Partner &bull; Certificate No. 211TBEC11072871 (Nov 2021)
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_MICROSOFT_CERT_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+        <!-- Credential 9 -->
+        <div class="p-4 rounded border border-stone-300 dark:border-stone-800 bg-white dark:bg-stone-900/60 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h3 class="font-bold text-stone-950 dark:text-stone-100">
+              JavaScript &amp; Node.js Course Completion
+            </h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">
+              Progate &amp; Kotakode Bootcamp (2021)
+            </p>
+          </div>
+          <a href="[GOOGLE_DRIVE_PROGATE_CERT_URL]" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-900 dark:text-stone-100 hover:underline whitespace-nowrap">
+            View in Google Drive &nearr;
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. Technical Skills & Languages                                           -->
+    <!-- ========================================================================= -->
+    <section id="about" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
+      
+      <div class="mb-8">
+        <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Technical Profile</h2>
+        <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Skills &amp; Competencies</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
+        
+        <div class="space-y-2">
+          <h3 class="font-bold text-stone-950 dark:text-stone-50 text-xs uppercase tracking-wider">Languages &amp; Desktop</h3>
+          <ul class="text-stone-600 dark:text-stone-400 space-y-1.5 text-xs">
+            <li>&bull; C# (.NET Framework &amp; .NET Core)</li>
+            <li>&bull; Visual Basic (.NET)</li>
+            <li>&bull; Go (Golang)</li>
+            <li>&bull; JavaScript (ES6+) &amp; TypeScript</li>
+            <li>&bull; PHP (CodeIgniter)</li>
+            <li>&bull; HTML5 &amp; Modern CSS</li>
           </ul>
         </div>
 
-        <!-- Role 2 -->
-        <div class="pb-8 border-b border-stone-200/60 dark:border-stone-800/60 last:border-b-0 last:pb-0">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
-            <h3 class="text-base font-bold text-stone-950 dark:text-stone-100">
-              [ROLE_2_TITLE, e.g., Front-End Developer] &mdash; <span class="font-normal text-stone-600 dark:text-stone-400">[COMPANY_2_NAME]</span>
-            </h3>
-            <span class="text-xs font-mono text-stone-400 dark:text-stone-500">[START_YEAR_2] &mdash; [END_YEAR_2]</span>
-          </div>
-          <p class="text-xs text-stone-500 dark:text-stone-400 mb-3">[LOCATION_2, e.g., New York, NY]</p>
-          <ul class="text-sm text-stone-700 dark:text-stone-300 space-y-1.5 list-disc list-outside pl-4 leading-relaxed max-w-2xl">
-            <li>[ROLE_2_HIGHLIGHT_A: e.g., Implemented key e-commerce checkout flows resulting in a 12% reduction in checkout drop-off rates.]</li>
-            <li>[ROLE_2_HIGHLIGHT_B: e.g., Migrated legacy client side scripts to modern modular ES6 and clean Tailwind utility classes.]</li>
+        <div class="space-y-2">
+          <h3 class="font-bold text-stone-950 dark:text-stone-50 text-xs uppercase tracking-wider">Web, DB &amp; Frameworks</h3>
+          <ul class="text-stone-600 dark:text-stone-400 space-y-1.5 text-xs">
+            <li>&bull; Microsoft SQL Server</li>
+            <li>&bull; PostgreSQL &amp; MySQL</li>
+            <li>&bull; SvelteJS &amp; Next.js (React)</li>
+            <li>&bull; Node.js &amp; NestJS</li>
+            <li>&bull; REST APIs &amp; Postman</li>
+            <li>&bull; Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-bold text-stone-950 dark:text-stone-50 text-xs uppercase tracking-wider">Industrial &amp; Operations</h3>
+          <ul class="text-stone-600 dark:text-stone-400 space-y-1.5 text-xs">
+            <li>&bull; Schneider HMI (EcoStruxure Operator)</li>
+            <li>&bull; Raspberry Pi &amp; Edge Hardware</li>
+            <li>&bull; MikroTik Network Routing &amp; LAN</li>
+            <li>&bull; Software Testing &amp; Machine Automation</li>
+            <li>&bull; SDLC &amp; Waterfall Methodologies</li>
+            <li>&bull; Indonesian (Native) &bull; English (TOEFL 517)</li>
           </ul>
         </div>
 
@@ -367,7 +652,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. Contact Section (Direct, Respectful & Clean)                          -->
+    <!-- 8. Contact Section                                                        -->
     <!-- ========================================================================= -->
     <section id="contact" class="py-16 sm:py-20 border-b border-stone-200 dark:border-stone-800">
       
@@ -375,12 +660,12 @@
         
         <div class="md:col-span-5 space-y-6">
           <div>
-            <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Contact</h2>
-            <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Initiate a conversation</p>
+            <h2 class="text-xs uppercase tracking-widest text-stone-500 dark:text-stone-400 font-semibold">Get in Touch</h2>
+            <p class="mt-1 text-2xl font-bold tracking-tight text-stone-950 dark:text-stone-50">Contact &amp; Profiles</p>
           </div>
 
           <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
-            I am always glad to discuss full-time roles, engineering advisory, or frontend architecture questions. You can write to me directly or use the note form.
+            Open to full-time engineering roles, desktop automation projects, and full-stack software development opportunities.
           </p>
 
           <div class="space-y-3 pt-2 text-sm">
@@ -390,16 +675,22 @@
             </div>
 
             <div>
-              <span class="text-xs text-stone-400 dark:text-stone-500 block uppercase font-mono">Location &amp; Timezone</span>
-              <span class="text-stone-700 dark:text-stone-300">[LOCATION] &bull; [TIMEZONE, e.g., UTC+7]</span>
+              <span class="text-xs text-stone-400 dark:text-stone-500 block uppercase font-mono">Location</span>
+              <span class="text-stone-700 dark:text-stone-300">Batam, Riau Islands, Indonesia (UTC+7)</span>
             </div>
 
             <div class="pt-2">
-              <span class="text-xs text-stone-400 dark:text-stone-500 block uppercase font-mono mb-1.5">Profiles</span>
-              <div class="flex items-center gap-4 text-xs font-semibold">
-                <a href="[GITHUB_PROFILE_URL]" target="_blank" rel="noopener noreferrer" class="hover:underline text-stone-700 dark:text-stone-300">GitHub &nearr;</a>
-                <a href="[LINKEDIN_PROFILE_URL]" target="_blank" rel="noopener noreferrer" class="hover:underline text-stone-700 dark:text-stone-300">LinkedIn &nearr;</a>
-                <a href="[TWITTER_OR_X_URL]" target="_blank" rel="noopener noreferrer" class="hover:underline text-stone-700 dark:text-stone-300">X / Twitter &nearr;</a>
+              <span class="text-xs text-stone-400 dark:text-stone-500 block uppercase font-mono mb-1.5">Official Links</span>
+              <div class="flex flex-col gap-2 text-xs font-semibold">
+                <a href="https://www.linkedin.com/in/asdhi-maulana-hidayatullah-662289174" target="_blank" rel="noopener noreferrer" class="hover:underline text-stone-800 dark:text-stone-200">
+                  LinkedIn: asdhi-maulana-hidayatullah-662289174 &nearr;
+                </a>
+                <a href="https://github.com/amaulanah" target="_blank" rel="noopener noreferrer" class="hover:underline text-stone-800 dark:text-stone-200">
+                  GitHub: github.com/amaulanah &nearr;
+                </a>
+                <a href="[GOOGLE_DRIVE_FOLDER_URL]" target="_blank" rel="noopener noreferrer" class="hover:underline text-stone-800 dark:text-stone-200">
+                  Google Drive: Verified Diplomas &amp; Certificates &nearr;
+                </a>
               </div>
             </div>
           </div>
@@ -424,12 +715,12 @@
 
               <div>
                 <label for="subject" class="block text-xs font-semibold text-stone-700 dark:text-stone-300 mb-1">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Project inquiry or introduction" class="w-full px-3 py-2 rounded border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-stone-300 transition-colors" />
+                <input type="text" id="subject" name="subject" placeholder="Project or job opportunity" class="w-full px-3 py-2 rounded border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-stone-300 transition-colors" />
               </div>
 
               <div>
                 <label for="message" class="block text-xs font-semibold text-stone-700 dark:text-stone-300 mb-1">Message</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Share what you are building, timeline, or thoughts..." class="w-full px-3 py-2 rounded border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-stone-300 transition-colors resize-y"></textarea>
+                <textarea id="message" name="message" rows="4" required placeholder="Describe your project, role, or inquiry..." class="w-full px-3 py-2 rounded border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-stone-300 transition-colors resize-y"></textarea>
               </div>
 
               <div class="pt-1 flex items-center justify-between">
@@ -450,17 +741,20 @@
   </main>
 
   <!-- ========================================================================= -->
-  <!-- 7. Footer / Colophon                                                      -->
+  <!-- 9. Footer                                                                 -->
   <!-- ========================================================================= -->
   <footer class="py-12 max-w-4xl mx-auto px-6 text-xs text-stone-500 dark:text-stone-400">
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="space-y-1 text-center sm:text-left">
-        <p>&copy; <span id="year">2026</span> [FULL_NAME]. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Asdhi Maulana Hidayatullah. All rights reserved.</p>
         <p class="text-stone-400 dark:text-stone-500">Set in Calibri &amp; Arial. Built with Tailwind CSS v3 and Vanilla JS.</p>
       </div>
 
       <div class="flex items-center gap-4">
-        <a href="#" class="hover:text-stone-900 dark:hover:text-stone-100 hover:underline" aria-label="Back to top">Return to top &uarr;</a>
+        <a href="https://www.linkedin.com/in/asdhi-maulana-hidayatullah-662289174" target="_blank" rel="noopener noreferrer" class="hover:underline">LinkedIn</a>
+        <a href="https://github.com/amaulanah" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a>
+        <a href="[GOOGLE_DRIVE_FOLDER_URL]" target="_blank" rel="noopener noreferrer" class="hover:underline">Google Drive</a>
+        <a href="#" class="hover:text-stone-900 dark:hover:text-stone-100 hover:underline" aria-label="Back to top">Top &uarr;</a>
       </div>
     </div>
   </footer>
